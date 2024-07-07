@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メール認証</title>
+    <style>
+        .container {
+            text-align: center;
+        }
+        .link_button {
+            background-color: black; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            border-radius: 20px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>メール認証
+            </h1>
+            <a href="https://shanaly.net/" target="_blank">https://shanaly.net/</a>
+        </div>
+        <div>
+            <p>シャナリの会員登録いただき、誠にありがとうございます。</p>
+            <p>以下のボタンをクリックして認証を完了させていただきます。</p>
+            <p>Thank you for creating your account.</p>
+            <p>Click the next button for finishing your email verification.</p>
+        </div>
+        <div>
+            <a href="{{ base_url }}/api/account/verify?token={{ token }}" class="link_button" target="_blank">メール認証</a>
+        </div>
+    </div>
+</body>
+</html>

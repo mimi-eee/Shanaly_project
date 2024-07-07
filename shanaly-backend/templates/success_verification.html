@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メール認証の成功</title>
+    <style>
+        .container {
+            text-align: center;
+        }
+        .link_button {
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            border-radius: 20px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>メール認証の成功</h1>
+        </div>
+        <div>
+            <div>
+                <p>{{username}} ( {{email}} ),</p>
+            </div>
+            <div>
+                <p>認証いただき誠にありがとうございます。</p>
+                <p>Thank you for the verification.</p>
+            </div>
+            <div>
+                <p>これからログインやご利用が可能です。</p>
+                <p>Now, you can login to our website :)</p>
+            </div>
+            <div>
+                <a href="{{ base_url }}" class="link_button" target="_blank">シャナリを利用する</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

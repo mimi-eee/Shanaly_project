@@ -1,0 +1,18 @@
+version: '3.8'
+
+# This yaml file is for DEVELOPMENT only
+
+services:
+  
+  database:
+    container_name: postgres
+    image: "postgres:16.2-alpine3.19" # PostgreSQL
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres # Super username
+      POSTGRES_PASSWORD: 123 # Super password
+    volumes:
+      - "/etc/localtime:/etc/localtime:ro" # Solving local system time synchronization 
+      - "/etc/timezone:/etc/timezone:ro" # Solving time zone synchronization 
